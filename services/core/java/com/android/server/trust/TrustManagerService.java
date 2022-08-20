@@ -84,6 +84,7 @@ import com.android.internal.content.PackageMonitor;
 import com.android.internal.infra.AndroidFuture;
 import com.android.internal.util.DumpUtils;
 import com.android.internal.widget.LockPatternUtils;
+import com.android.server.LocalServices;
 import com.android.server.SystemService;
 import com.android.server.servicewatcher.CurrentUserServiceSupplier;
 import com.android.server.servicewatcher.ServiceWatcher;
@@ -1017,7 +1018,7 @@ public class TrustManagerService extends SystemService {
 
             if (!info.supportsSwitchToByUser()) {
                 if (info.isProfile() && !secure
-                        && !mLockPatternUtils.isProfileWithUnifiedChallenge(id)) {
+                        && !mLockPatternUtils.isProfileWithUnifiedChallenge(id) || info.isParallel()) {
                     // Unsecured profiles need to be explicitly set to false.
                     // However, Unified challenge profiles officially shouldn't have a presence in
                     // mDeviceLockedForUser at all, since that's not how they're tracked.

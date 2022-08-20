@@ -348,6 +348,7 @@ import com.android.server.LocalServices;
 import com.android.server.SystemConfig;
 import com.android.server.UiThread;
 import com.android.server.Watchdog;
+import com.android.server.derp.ParallelSpaceManagerService;
 import com.android.server.input.InputManagerService;
 import com.android.server.inputmethod.InputMethodManagerInternal;
 import com.android.server.pm.UserManagerInternal;
@@ -3821,7 +3822,8 @@ public class WindowManagerService extends IWindowManager.Stub
 
     /* Called by WindowState */
     boolean isUserVisible(@UserIdInt int userId) {
-        return mUmInternal.isUserVisible(userId);
+        return mUmInternal.isUserVisible(userId)
+                || ParallelSpaceManagerService.isCurrentParallelUser(userId);
     }
 
     @UserIdInt int getUserAssignedToDisplay(int displayId) {
