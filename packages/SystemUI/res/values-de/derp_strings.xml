@@ -168,4 +168,8 @@
 
     <!-- Screenshot Tile -->
     <string name="screenshot_long_press">Gedrückt halten - ausgewählter Bereich</string>
+
+    <!-- Language toggle tile -->
+    <string name="quick_settings_locale_label">Sprache</string>
+    <string name="quick_settings_locale_more_locales_toast">Bitte zunächst mehr als eine Sprache hinzufügen</string>
 </resources>
