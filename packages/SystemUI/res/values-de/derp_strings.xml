@@ -121,4 +121,9 @@
     <!-- Kill button in notification guts -->
     <string name="force_stop_dlg_title">Beenden erzwingen?</string>
     <string name="force_stop_dlg_text">Das Beenden einer App zu erzwingen, kann zu unerwünschtem Verhalten führen.</string>
+
+    <!-- Data usage info in QS footer -->
+    <string name="usage_data">heute verbraucht</string>
+    <string name="usage_data_default_suffix">Daten</string>
+    <string name="usage_wifi_default_suffix">WLAN</string>
 </resources>
