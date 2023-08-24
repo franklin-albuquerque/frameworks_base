@@ -52,4 +52,9 @@
     <string name="charging_control_notification_content_limit_reached">Akku ist bis %1$d%% geladen</string>
     <string name="charging_control_notification_content_target">Akku wird bis %1$s vollständig geladen sein</string>
     <string name="charging_control_notification_content_target_reached">Akku ist aufgeladen</string>
+
+    <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">Zum Entsperren Ein-/Aus-Taste gedrückt halten</string>
+    <string name="pocket_view_title">Taschenmodus aktiviert</string>
+    <string name="pocket_view_title_cancel">Befreie den markierten oberen Bereich des Geräts oder halte Ein-/Aus-Taste gedrückt, um den Taschenmodus zu beenden</string>
 </resources>
